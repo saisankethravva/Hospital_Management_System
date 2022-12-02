@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+:root {
+  --amplify-primary-color: #035d91;
+  --amplify-primary-tint: #035d91;
+  --amplify-primary-shade: #035d91;
+  --amplify-background-color: #f5fafa;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -65,7 +70,7 @@ table caption {
 
 table thead th {
   padding: 8px;
-  background-color: #ea6153;
+  background-color: #035d91;
   font-size: 14px;
   color: white;
 }
@@ -111,13 +116,13 @@ button,
 }
 
 button.btn-theme {
-  background-color: #ea6153 !important;
+  background-color: #035d91 !important;
   border: 0;
   border-radius: 0;
 }
 
 .navbar {
-  background-color: #ea6153;
+  background-color: #035d91;
   height: 60px;
   display: flex;
   justify-content: flex-start;
@@ -140,7 +145,7 @@ button.btn-theme {
 }
 
 .nav-menu {
-  background-color: #ea6153;
+  background-color: #035d91;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -189,7 +194,7 @@ button.btn-theme {
 }
 
 .navbar-toggle {
-  background-color: #ea6153;
+  background-color: #035d91;
   width: 100%;
   height: 80px;
   display: flex;
@@ -289,8 +294,8 @@ span {
 }
 
 .btn-success {
-  background-color: #ea6153;
-  border-color: #ea6153;
+  background-color: #035d91;
+  border-color: #035d91;
 }
 
 table th, table td {
@@ -308,7 +313,7 @@ table tbody tr:nth-child(2n) {
 
 .z-index-set {
   z-index: -1;
-  border: 1px solid #ea6153;
+  border: 1px solid #035d91;
   border-bottom: 0;
   border-right: 0;
   border-left: 0;
@@ -316,7 +321,7 @@ table tbody tr:nth-child(2n) {
 }
 
 .header-container {
-  border: 1px solid #ea6153;
+  border: 1px solid #035d91;
   border-top: 0;
   border-right: 0;
   border-left: 0;
