@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "cmpe281project2",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcmpe281project26173a9cd",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-cmpe281project2-sampledev-163219-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/3f8d4752092ea183755dce0a37b3e03acda3fad9"
+}
