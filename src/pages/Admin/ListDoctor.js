@@ -25,7 +25,7 @@ export default function ListDoctor()
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [fields, handleFieldChange] = useFormFields({
-    fistName: "",
+    firstName: "",
     lastName: "",
     phone: "",
     address: "",
@@ -37,7 +37,7 @@ export default function ListDoctor()
   const [updateModalShow, setUpdateModalShow] = React.useState(false);
 
   const [singleDoctor, setSingleDoctor] = useState({
-    id: "",
+    //id: "",
     firstName: "",
     lastName: "",
     phone: "",
@@ -150,8 +150,8 @@ export default function ListDoctor()
             <td>{element.firstName} {element.lastName}</td>
             <td>{element.phone}</td>
             <td>{element.address}</td>
-            <td>{element.createdAt}</td>
-            <td>{element.updatedAt}</td>
+            <td>{element.createdAt.split('T')[0]}</td>
+            <td>{element.updatedAt.split('T')[0]}</td>
             <td>
               <FaIcons.FaUserEdit onClick={() => getDoctorInfo(element.id)} style={{fontSize: '24px', marginRight: '5px',}} />
               <FaIcons.FaTrash onClick={() => deleteDoctorInfo(element.id)} style={{fontSize: '24px', marginRight: '5px',}} />

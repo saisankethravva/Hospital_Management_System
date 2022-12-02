@@ -17,8 +17,8 @@ export default function UpdatePatientModal(props) {
   function validateForm() {
     try {
       return (
-        fields.phone.length > 0 &&
-        fields.address.length > 0 &&
+        fields.phone.length > 0 ||
+        fields.address.length > 0 ||
         fields.birthDate.length > 0 
       );
     } catch (e) {

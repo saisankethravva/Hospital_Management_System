@@ -24,10 +24,11 @@ export default function ListPatient() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [fields, handleFieldChange] = useFormFields({
-    fistName: "",
+    firstName: "",
     lastName: "",
     phone: "",
     address: "",
+    email:"",
     birthDate: "",
     sex: "",
     ssn: "",
@@ -40,9 +41,10 @@ export default function ListPatient() {
   const [updateModalShow, setUpdateModalShow] = React.useState(false);
 
   const [singlePatient, setSinglePatient] = useState({
-    fistName: "",
+    firstName: "",
     lastName: "",
     phone: "",
+    email:"",
     address: "",
     birthDate: "",
     sex: "",
@@ -95,9 +97,10 @@ export default function ListPatient() {
       }
       setSinglePatient({
         id: apiData.data.getPatient.id,
-        fistName: apiData.data.getPatient.firstName,
+        firstName: apiData.data.getPatient.firstName,
         lastName: apiData.data.getPatient.lastName,
         phone: apiData.data.getPatient.phone,
+        email: apiData.data.getPatient.email,
         address: apiData.data.getPatient.address,
         birthDate: apiData.data.getPatient.birthDate,
         sex: apiData.data.getPatient.sex,

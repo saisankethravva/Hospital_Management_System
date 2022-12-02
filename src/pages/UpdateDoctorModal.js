@@ -17,7 +17,7 @@ export default function UpdateDoctorModal(props) {
   function validateForm() {
     try {
       return (
-        fields.phone.length > 0 &&
+        fields.phone.length > 0 ||
         fields.address.length > 0
       );
     } catch (e) {
@@ -58,6 +58,24 @@ export default function UpdateDoctorModal(props) {
       </Modal.Header>
       <Modal.Body>
         <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="firstName">
+            <Form.Label>First Name</Form.Label>
+            <Form.Control
+              value={fields.firstName}
+              placeholder={props.doctor.firstName}
+              type="text"
+              onChange={handleFieldChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="lastName">
+            <Form.Label>Last Name</Form.Label>
+            <Form.Control
+              value={fields.lastName}
+              placeholder={props.doctor.lastName}
+              type="text"
+              onChange={handleFieldChange}
+            />
+          </Form.Group>
           <Form.Group controlId="phone">
             <Form.Label>Phone</Form.Label>
             <Form.Control
